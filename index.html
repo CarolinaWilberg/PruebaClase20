@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <style>
+            *{
+                margin: 0px;
+                padding: 0px;
+            }
+            header,main{
+                text-align: center;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+            }
+            header h1{
+                margin: 10px;
+            }
+            header nav{
+                background-color: lightblue;
+                width: 90%;
+                padding: 10px 0px;
+                margin-bottom: 10px;
+            }
+            nav a{
+                margin: 5px 15px;
+            }
+            section{
+                background-color: lightblue;
+                margin-bottom: 10px;
+                text-align: center;
+                height: 200px;
+                width: 90%;
+            }
+            .flex{
+                display: flex;
+            }
+            .flex div{
+                padding-top: 10px;
+                flex-grow: 1;
+                width: 33.3%;
+            }
+            footer{
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                margin-bottom: 10px;
+                margin-top: -10px;
+            }
+            footer>p{
+                width: 90%;
+                background-color: lightblue;
+                padding-bottom: 20px;
+            }
+            @media(max-width:450px){
+                header nav{
+                    display: hidden;
+                }
+                .flex{
+                    flex-direction: column;
+                }
+                .flex div{
+                    height: 300px;
+                    text-align: center;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Logo</h1>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Products</a>
+                <a href="#">Services</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <h4>Feature</h4>
+            </section>
+            <section class="flex">
+                <div>Column One</div>
+                <div>Column Two</div>
+                <div>Column Three</div>
+            </section>
+        </main>
+        <footer>
+            <p>Copyright 2011</p>
+        </footer>
+    </body>
+</html>
